@@ -4,7 +4,7 @@
 DAEMON=/usr/local/kms/vlmcsd
 STAT=2
 check_running(){
-PID='ps -ef | grep -v grep | grep -i "vlmcsd" | awk '{print $2}''
+PID='ps -ef | grep -v grep | grep -i "vlmcsd" | awk "{print $2}"'
        if [ ! -z $PID ]; then
         STAT=0
     else
